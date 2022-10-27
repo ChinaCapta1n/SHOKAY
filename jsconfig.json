@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        // 一个模块如果没有默认导出，仍然允许 import export语法
+        "allowSyntheticDefaultImports": true,
+        // 使用import export模块管理方式
+        "module": "ES2015"
+    }
+}
