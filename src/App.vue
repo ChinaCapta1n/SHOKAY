@@ -2,7 +2,7 @@
 import NavBar from './components/NavBar/NavBar.vue';
 import NavFooter from './components/Footer/footer.vue';
 
-import './assets/base.scss';
+
 </script>
 
 <template>
@@ -28,12 +28,13 @@ import './assets/base.scss';
   right: 0;
   z-index: 100;
 }
+
 .footer {
-    height: 4.3rem;
-    line-height: 4.3rem;
-    text-align: center;
-    color: rgb(216, 225, 217);
-    font-size: 1.3rem;
-    background-color: rgb(117, 111, 99);
+  height: 4.3rem;
+  line-height: 4.3rem;
+  text-align: center;
+  color: rgb(216, 225, 217);
+  font-size: 1.3rem;
+  background-color: rgb(117, 111, 99);
 }
 </style>

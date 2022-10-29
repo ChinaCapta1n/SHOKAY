@@ -1,0 +1,67 @@
+// home-page
+@mixin h2-title($pb: 5rem, $mb: 4rem) {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.4;
+    color: #756f63;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    padding-bottom: $pb;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-bottom: $mb;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        height: 1px;
+        background-color: rgb(187, 183, 176);
+    }
+}
+
+@mixin desc-p {
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 1.7;
+    color: #756f63;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+@mixin parallax-background($position) {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: $position;
+}
+
+@mixin parallax-title-text($color: $main-h2-color, $size: $main-h2-size, $align: center) {
+    color: $color;
+    font-size: $size;
+    text-align: $align;
+}
+
+@mixin parallax-description-text($color: $main-p-color, $size: $main-p-size, $align: center) {
+    color: $color;
+    font-size: $size;
+    text-align: $align;
+    line-height: 1.5;
+}
+
+// fiber
+@mixin banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 4.6rem;
+    color: #fff;
+    z-index: 2;
+    font-family: 'Times New Roman', Times, serif;
+}
