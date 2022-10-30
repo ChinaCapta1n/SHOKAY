@@ -10,14 +10,23 @@ import NavFooter from './components/Footer/footer.vue';
     <nav-bar />
   </header>
 
-  <router-view></router-view>
+  <router-view v-slot="{ Component }">
+
+    <Transition name="fade">
+      <component :is="Component" />
+    </Transition>
+
+  </router-view>
+
+
+
 
   <footer class="footer">
     <nav-footer />
   </footer>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .header {
   height: 6.3rem;
   // background-color: #313f51;
@@ -36,5 +45,26 @@ import NavFooter from './components/Footer/footer.vue';
   color: rgb(216, 225, 217);
   font-size: 1.3rem;
   background-color: rgb(117, 111, 99);
+}
+
+.main-content {
+  transition: all .5s linear;
+}
+
+.fade-enter-from {
+  opacity: 1;
+}
+
+.fade-enter-to {
+  opacity: 0;
+}
+
+
+.fade-leave-from {
+  opacity: 0;
+}
+
+.fade-leave-to {
+  opacity: 1;
 }
 </style>

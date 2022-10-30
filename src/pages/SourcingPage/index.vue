@@ -1,9 +1,11 @@
 <template>
-    <!-- versatility-of-yak -->
-    <versatility-of-yak />
+    <div class="main-content">
+        <!-- versatility-of-yak -->
+        <versatility-of-yak />
 
-    <!-- box -->
-    <box />
+        <!-- box -->
+        <box />
+    </div>
 
 </template>
 <script setup>
