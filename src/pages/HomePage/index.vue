@@ -1,33 +1,35 @@
 <template>
-    <!-- section1 -->
-    <home-banner />
+    <div class="main-content">
+        <!-- section1 -->
+        <home-banner />
 
-    <!-- section2 -->
-    <sustainable-yak-wool />
+        <!-- section2 -->
+        <sustainable-yak-wool />
 
-    <!-- section3 -->
-    <luxurious-yak />
+        <!-- section3 -->
+        <luxurious-yak />
 
-    <!-- section4 -->
-    <protecting-you />
+        <!-- section4 -->
+        <protecting-you />
 
-    <!-- section5 -->
-    <traceable-yak />
+        <!-- section5 -->
+        <traceable-yak />
 
-    <!-- section6 -->
-    <yak-display />
+        <!-- section6 -->
+        <yak-display />
 
-    <!-- section7 -->
-    <shokay-lab />
+        <!-- section7 -->
+        <shokay-lab />
 
-    <!-- section8 -->
-    <partnership />
+        <!-- section8 -->
+        <partnership />
 
-    <!-- section9 -->
-    <community-development />
+        <!-- section9 -->
+        <community-development />
 
-    <!-- last section -->
-    <source-from-plateau />
+        <!-- last section -->
+        <source-from-plateau />
+    </div>
 
 
 </template>

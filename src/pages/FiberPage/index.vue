@@ -1,20 +1,22 @@
 <template>
-    <hero-banner :data="bannerData" />
+    <div class="main-content">
+        <hero-banner :data="bannerData" />
 
-    <!-- count to -->
-    <count-to />
+        <!-- count to -->
+        <count-to />
 
-    <!-- types of hair -->
-    <types-of-hair />
+        <!-- types of hair -->
+        <types-of-hair />
 
-    <!-- cashmere -->
-    <cash-mere />
+        <!-- cashmere -->
+        <cash-mere />
 
-    <!-- compared -->
-    <compared />
+        <!-- compared -->
+        <compared />
 
-    <!-- Cashemre is mainstream -->
-    <cashmere-is-mainstream />
+        <!-- Cashemre is mainstream -->
+        <cashmere-is-mainstream />
+    </div>
 
 </template>
 <script setup>

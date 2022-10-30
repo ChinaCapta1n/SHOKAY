@@ -10,9 +10,14 @@ import SourcingPage from './pages/SourcingPage/index.vue';
 
 
 
+
 const routes = [
     {
         path: '/',
+        redirect: '/home',
+    },
+    {
+        path: '/home',
         name: 'home',
         component: HomePage
     },
