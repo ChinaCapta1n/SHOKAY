@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import HomePage from './pages/HomePage/index.vue';
 import AboutUsPage from './pages/AboutUsPage.vue';
-import DesignPage from './pages/DesignPage.vue';
+import DesignPage from './pages/DesignPage/index.vue';
 import FiberPage from './pages/FiberPage/index.vue';
 import ImpactPage from './pages/ImpactPage.vue';
 import MarketingPage from './pages/MarketingPage.vue';

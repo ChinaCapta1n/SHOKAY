@@ -16,7 +16,11 @@
                     SOURCING
                 </router-link>
             </a>
-            <a href="javascript:;">DESIGN</a>
+            <a href="javascript:;">
+                <router-link to="/design">
+                    DESIGN
+                </router-link>
+            </a>
             <a href="javascript:;">MARKETING</a>
             <a href="javascript:;">IMPACT</a>
             <a href="javascript:;">ABOUT US</a>
