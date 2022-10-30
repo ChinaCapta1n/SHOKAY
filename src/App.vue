@@ -52,7 +52,7 @@ import NavFooter from './components/Footer/footer.vue';
 }
 
 .fade-enter-from {
-  opacity: 1;
+  opacity: 0;
 }
 
 .fade-enter-to {
@@ -61,7 +61,7 @@ import NavFooter from './components/Footer/footer.vue';
 
 
 .fade-leave-from {
-  opacity: 0;
+  opacity: 1;
 }
 
 .fade-leave-to {
