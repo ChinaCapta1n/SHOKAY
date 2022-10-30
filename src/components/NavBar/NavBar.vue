@@ -26,7 +26,11 @@
                     MARKETING
                 </router-link>
             </a>
-            <a href="javascript:;">ABOUT US</a>
+            <a href="javascript:;">
+                <router-link to="/about-us">
+                    ABOUT US
+                </router-link>
+            </a>
         </div>
         <div class="navbar-right">
             <!-- lang select -->
