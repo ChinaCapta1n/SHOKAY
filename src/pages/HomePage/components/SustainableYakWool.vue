@@ -1,5 +1,5 @@
 <template>
-    <section class="section-2">
+    <section class="sustainable-yak-wool">
         <div class="container">
             <div class="left">
                 <img :src="data.img" alt="">
@@ -12,15 +12,14 @@
     </section>
 </template>
 <script setup>
-defineProps({
-    data: {
-        type: Object,
-        required: true
-    }
-})
+const data = {
+    img: "/images/cattle.webp",
+    title: "SUSTAINABLE YAK WOOL",
+    description: "SUSTAINABLE YAK WOOL Shokay is a sustainable textiles company best known for using yak wool to develop premium products, from fiber to finished garments. We have built a fully traceable supply chain over the last 15 years by sourcing directly from Tibetan herders and partnering with like-minded manufacturers along the supply chain."
+}
 </script>
 <style lang="scss" scoped>
-.section-2 {
+.sustainable-yak-wool {
     padding: $home-section-padding;
 
     .container {

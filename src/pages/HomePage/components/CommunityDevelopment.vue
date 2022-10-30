@@ -1,20 +1,18 @@
 <template>
-    <section class="section-9" :style="{
-        backgroundImage: `url(${data.backgroundImg})`
-    }">
+    <parallax-background class="community-development" :backgroundImage="data.backgroundImg">
         <p>{{ data.title }}</p>
-    </section>
+    </parallax-background>
 </template>
 <script setup>
-defineProps({
-    data: {
-        type: Object,
-        required: true
-    }
-})
+import ParallaxBackground from '../../../components/ParallaxBackground/index.vue';
+
+const data = {
+    backgroundImg: "/images/old-people.webp",
+    title: "COMMUNITY　DEVELOPMENT　FUND"
+}
 </script>
 <style lang="scss" scoped>
-.section-9 {
+.community-development {
     height: 60rem;
     padding: $home-section-padding;
     @include parallax-background(100%);

@@ -1,5 +1,5 @@
 <template>
-    <section class="last-section">
+    <section class="srouced-from-plateau">
         <div class="container">
             <h2>{{ data.title }}</h2>
             <p>{{ data.description }}</p>
@@ -15,15 +15,30 @@
     </section>
 </template>
 <script setup>
-defineProps({
-    data: {
-        type: Object,
-        required: true
-    }
-})
+const data = {
+    title: "Sourced from the Highest Plateau in the World Working with 800+ Herding Communities across Qinghai, Tibet, and Sichuan",
+    description: "Shokay's supply chain enables us to serve as a platform for local and international organizations to implement local community programs. We provide connections to rural communities that would otherwise be difficult to access. Since our start, Shokay has donated 1% of our revenue to our Community Development Fund, and as we scale, we will further partner with different organizations to jointly develop community programs that best address local needs.",
+    items: [
+        {
+            "title": "Women Empowerment Cooperatives",
+            "description": "Providing skill training through women cooperatives. Shokay launched a hand spinning cooperative in Qinghai and a hand knitting cooperative in Chongming Island to empower women and create opportunities.",
+            "backgroundImage": "/images/home-swiper/bg1.webp"
+        },
+        {
+            "title": "Empowering Tibetan Youth",
+            "description": "Shokay supports young Tibetans who want to build local businesses in their communities. We link them to our supply chain, mentor them on entrepreneurship skills, and train them to source, class, and ship the fibers to our carding facilities.",
+            "backgroundImage": "/images/home-swiper/bg2.webp"
+        },
+        {
+            "title": "Commitment to Grassland Conservation",
+            "description": "In 2018, Shokay signed an MOU with non-profit ICIMOD to set best practices for the livelihoods of yaks and the herding communities, coupled with grassland preservation initiatives in the mountainous areas which span across eight countries (China, Nepal, India, Afghanistan, Pakistan, Myanmar, Bangladesh, Bhutan).",
+            "backgroundImage": "/images/home-swiper/bg3.webp"
+        }
+    ]
+}
 </script>
 <style lang="scss" scoped>
-.last-section {
+.srouced-from-plateau {
     padding: 10rem 0;
 
     .container {

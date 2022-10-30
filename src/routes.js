@@ -6,7 +6,7 @@ import DesignPage from './pages/DesignPage.vue';
 import FiberPage from './pages/FiberPage/index.vue';
 import ImpactPage from './pages/ImpactPage.vue';
 import MarketingPage from './pages/MarketingPage.vue';
-import SourcingPage from './pages/SourcingPage.vue';
+import SourcingPage from './pages/SourcingPage/index.vue';
 
 
 
@@ -45,6 +45,11 @@ const routes = [
         path: '/sourcing',
         name: 'sourcing',
         component: SourcingPage
+    },
+    {
+        path: '/fiberfillings',
+        name: 'fiberfillings',
+        component: () => import('./pages/FiberPage/components/FibersFillings/index.vue')
     }
 ]
 

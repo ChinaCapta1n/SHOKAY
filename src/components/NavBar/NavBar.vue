@@ -11,7 +11,11 @@
                     FIBER
                 </router-link>
             </a>
-            <a href="javascript:;">SOURCING</a>
+            <a href="javascript:;">
+                <router-link to="/sourcing">
+                    SOURCING
+                </router-link>
+            </a>
             <a href="javascript:;">DESIGN</a>
             <a href="javascript:;">MARKETING</a>
             <a href="javascript:;">IMPACT</a>

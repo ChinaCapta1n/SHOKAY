@@ -33,10 +33,10 @@
     margin: 0 auto;
 }
 
-@mixin parallax-background($position) {
+@mixin parallax-background($size: cover, $position: 100%) {
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: $size;
     background-position: $position;
 }
 
