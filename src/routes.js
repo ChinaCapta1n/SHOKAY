@@ -50,6 +50,11 @@ const routes = [
         path: '/fiberfillings',
         name: 'fiberfillings',
         component: () => import('./pages/FiberPage/components/FibersFillings/index.vue')
+    },
+    {
+        path: '/yarns',
+        name: 'yarns',
+        component: () => import('./pages/FiberPage/components/Yarns/index.vue')
     }
 ]
 
