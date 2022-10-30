@@ -4,8 +4,7 @@ import HomePage from './pages/HomePage/index.vue';
 import AboutUsPage from './pages/AboutUsPage.vue';
 import DesignPage from './pages/DesignPage/index.vue';
 import FiberPage from './pages/FiberPage/index.vue';
-import ImpactPage from './pages/ImpactPage.vue';
-import MarketingPage from './pages/MarketingPage.vue';
+import MarketingPage from './pages/MarketingPage/index.vue';
 import SourcingPage from './pages/SourcingPage/index.vue';
 
 
@@ -35,11 +34,6 @@ const routes = [
         path: '/fiber',
         name: 'fiber',
         component: FiberPage
-    },
-    {
-        path: '/impact',
-        name: 'impact',
-        component: ImpactPage
     },
     {
         path: '/marketing',
