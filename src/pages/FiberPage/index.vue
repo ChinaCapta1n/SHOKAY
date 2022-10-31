@@ -1,6 +1,6 @@
 <template>
     <div class="main-content">
-        <hero-banner :data="bannerData" />
+        <hero-banner :data="bannerData" anchor="about-the-yak" />
 
         <!-- count to -->
         <count-to />

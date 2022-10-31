@@ -1,6 +1,10 @@
 <template>
     <div class="bottom-image">
-        <h2>{{ BottomImageData.title }}</h2>
+        <h2>
+            <a name="licensing">
+                {{ BottomImageData.title }}
+            </a>
+        </h2>
         <p>{{ BottomImageData.description }}</p>
     </div>
 </template>
@@ -14,10 +18,13 @@ const BottomImageData = {
 .bottom-image {
     h2 {
         font-size: 3.2rem;
-        color: #4e4a42;
         font-family: cursive;
         margin-bottom: 6rem;
         margin-top: 10rem;
+
+        a {
+            color: #4e4a42;
+        }
     }
 
     p {

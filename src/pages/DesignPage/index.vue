@@ -2,7 +2,7 @@
     <div class="main-content">
         <section class="design">
             <div class="container">
-                <description-box />
+                <description-box :data="dataTop" />
 
                 <template v-for="(item, index) in data" :key="index">
                     <item :item="item" />
@@ -15,6 +15,11 @@
 <script setup>
 import DescriptionBox from './components/DescriptionBox.vue';
 import Item from './components/Item.vue';
+
+const dataTop = {
+    title: "Design",
+    description: "The fashion & textiles industry has only started to use yak wool in recent years. Because very few mills offer high quality yarns & fabrics made from yak wool, many designers are less familiar with what can be made with the material. Shokay has an in-house design team that can work closely with brands & designers to develop products that meet both their quality and budget requirements."
+}
 
 const data = [
     {

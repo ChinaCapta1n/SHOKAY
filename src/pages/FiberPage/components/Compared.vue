@@ -1,7 +1,11 @@
 <template>
     <section class="compared">
         <div class="container">
-            <h2>{{ data[0] }}</h2>
+            <h2>
+                <a name="compare-to-other-fibers">
+                    {{ data[0] }}
+                </a>
+            </h2>
             <table>
                 <thead>
                     <tr>
@@ -52,10 +56,13 @@ const data = [
 .compared {
     .container {
         h2 {
-            color: #4e4a42;
             font-size: 3.2rem;
             text-align: center;
             margin-bottom: 6rem;
+
+            a {
+                color: #4e4a42;
+            }
         }
 
         table {

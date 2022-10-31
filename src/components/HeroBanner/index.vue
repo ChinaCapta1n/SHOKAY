@@ -2,7 +2,18 @@
     <div class="hero-header" :style="{
         backgroundImage: `url(${data.img})`
     }">
-        <h2>{{ data.title }}</h2>
+        <h2>
+            <template v-if="anchor">
+                <a :name="anchor">
+                    {{ data.title }}
+                </a>
+            </template>
+
+            <template v-else>
+                {{ data.title }}
+            </template>
+
+        </h2>
     </div>
 </template>
 <script setup>
@@ -10,6 +21,9 @@ defineProps({
     data: {
         type: Object,
         required: true
+    },
+    anchor: {
+        type: String
     }
 })
 </script>
@@ -33,6 +47,10 @@ defineProps({
 
     h2 {
         @include banner-title;
+
+        a {
+            color: #fff;
+        }
     }
 }
 </style>
