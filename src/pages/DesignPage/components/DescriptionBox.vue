@@ -5,10 +5,14 @@
     </div>
 </template>
 <script setup>
-const data = {
-    title: "Design",
-    description: "The fashion & textiles industry has only started to use yak wool in recent years. Because very few mills offer high quality yarns & fabrics made from yak wool, many designers are less familiar with what can be made with the material. Shokay has an in-house design team that can work closely with brands & designers to develop products that meet both their quality and budget requirements."
-}
+defineProps({
+    data: {
+        type: Object,
+        required: true
+    }
+})
+
+
 </script>
 <style lang="scss" scoped>
 .design-header {

@@ -1,6 +1,10 @@
 <template>
     <div class="top-content">
-        <h2>{{ topContentData.title }}</h2>
+        <h2>
+            <a name="traceability">
+                {{ topContentData.title }}
+            </a>
+        </h2>
         <p v-for="(des, index) in topContentData.description" :key="index">
             {{ des }}
         </p>
@@ -40,9 +44,12 @@ const topContentData = {
 .top-content {
     h2 {
         font-size: 3.2rem;
-        color: #4e4a42;
         font-family: cursive;
         margin-bottom: 6rem;
+
+        a {
+            color: #4e4a42;
+        }
     }
 
     p {

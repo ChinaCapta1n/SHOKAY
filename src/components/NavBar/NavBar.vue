@@ -1,32 +1,79 @@
 <template>
     <nav class="navbar">
         <div class="navbar-left">
-            <a href="javascript:;">
+            <a class="menu" href="javascript:;">
                 <router-link to="/">
                     HOME
                 </router-link>
             </a>
-            <a href="javascript:;">
+            <a class="menu" href="javascript:;">
                 <router-link to="/fiber">
                     FIBER
+                    <ul class="sub-menu">
+                        <li>
+                            <router-link to="/fiber">
+                                ABOUT THE YAK
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link to="/fiber">
+                                COMPARING YAK TO OTHER FIBERS
+                            </router-link>
+                        </li>
+                    </ul>
                 </router-link>
+
             </a>
-            <a href="javascript:;">
+            <a class="menu" href="javascript:;">
                 <router-link to="/sourcing">
                     SOURCING
                 </router-link>
             </a>
-            <a href="javascript:;">
+            <a class="menu" href="javascript:;">
                 <router-link to="/design">
                     DESIGN
                 </router-link>
+                <ul class="sub-menu">
+                    <li>
+                        <router-link to="/artist">
+                            artist
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link to="/compare">
+                            compare
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link to="/fashion">
+                            fashion
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link to="/lifestyle">
+                            lifestyle
+                        </router-link>
+                    </li>
+                </ul>
             </a>
-            <a href="javascript:;">
+            <a class="menu" href="javascript:;">
                 <router-link to="/marketing">
                     MARKETING
                 </router-link>
+                <ul class="sub-menu">
+                    <li>
+                        <router-link to="/marketing">
+                            TRACEABILITY & VERIFICATION
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link to="/marketing">
+                            MEDIA LICENSING
+                        </router-link>
+                    </li>
+                </ul>
             </a>
-            <a href="javascript:;">
+            <a class="menu" href="javascript:;">
                 <router-link to="/about-us">
                     ABOUT US
                 </router-link>
@@ -56,6 +103,8 @@
 <script setup>
 import { ref } from 'vue';
 
+
+
 const langData = [
     {
         lang: "EN"
@@ -83,6 +132,32 @@ const iCons = [
 const flag = ref(false);
 const language = ref(null);
 
+function getElemDocPosition(el) {
+    var parent = el.offsetParent,
+        offsetTop = el.offsetTop;
+
+    while (parent) {
+        offsetTop += parent.offsetTop;
+        parent = parent.offsetParent;
+    }
+
+    return {
+        Top: offsetTop
+    }
+}
+
+function scrollFn(e) {
+    let target = e.target.getAttribute('href').replace('#', '');
+    let { Top } = getElemDocPosition(document.querySelector(`a[name=${target}]`));
+
+    window.scrollTo({
+        top: Top - 100,
+        behavior: 'smooth'
+    })
+
+    e.preventDefault()
+}
+
 
 function langBtn(e) {
     var e = e || window.event;
@@ -106,6 +181,45 @@ window.addEventListener('click', () => {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .navbar-left {
+        height: 100%;
+        line-height: 6.3rem;
+
+        .menu {
+            position: relative;
+            height: 100%;
+            display: inline-block;
+        }
+
+        a {
+
+            &:hover {
+                .sub-menu {
+                    display: block;
+                }
+            }
+
+            .sub-menu {
+                position: absolute;
+                top: 6.3rem;
+                left: 0;
+                background-color: rgb(92, 87, 87);
+                display: none;
+                line-height: 1.4;
+
+                li {
+                    padding-bottom: 1rem;
+
+                    a {
+                        display: block;
+                        padding-top: 1rem;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
 
     .navbar-right {
         display: flex;

@@ -54,7 +54,27 @@ const routes = [
         path: '/yarns',
         name: 'yarns',
         component: () => import('./pages/FiberPage/components/Yarns/index.vue')
-    }
+    },
+    {
+        path: '/artist',
+        name: 'artist',
+        component: () => import('./pages/DesignPage/SubPage/Artist.vue')
+    },
+    {
+        path: '/compare',
+        name: 'compare',
+        component: () => import('./pages/DesignPage/SubPage/Compare.vue')
+    },
+    {
+        path: '/fashion',
+        name: 'fashion',
+        component: () => import('./pages/DesignPage/SubPage/Fashion.vue')
+    },
+    {
+        path: '/lifestyle',
+        name: 'lifestyle',
+        component: () => import('./pages/DesignPage/SubPage/LifeStyle.vue')
+    },
 ]
 
 const router = createRouter({
