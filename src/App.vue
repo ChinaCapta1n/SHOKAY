@@ -11,12 +11,10 @@ import NavFooter from './components/Footer/footer.vue';
     <nav-bar />
   </header>
 
-  <router-view v-slot="{ Component }">
-
+  <router-view v-slot="{ Component, route }">
     <Transition name="fade">
-      <component :is="Component" />
+      <component :is="Component" :key="route.path" />
     </Transition>
-
   </router-view>
 
 
@@ -48,24 +46,16 @@ import NavFooter from './components/Footer/footer.vue';
   background-color: rgb(117, 111, 99);
 }
 
-.main-content {
-  transition: all .5s linear;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s linear;
 }
 
 .fade-enter-from {
-  opacity: 0;
-}
-
-.fade-enter-to {
   opacity: 1;
-}
-
-
-.fade-leave-from {
-  opacity: 0;
 }
 
 .fade-leave-to {
-  opacity: 1;
+  opacity: 0;
 }
 </style>

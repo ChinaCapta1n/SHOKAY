@@ -1,33 +1,23 @@
 <template>
     <div class="main-content">
-        <!-- section1 -->
         <home-banner />
 
-        <!-- section2 -->
         <sustainable-yak-wool />
 
-        <!-- section3 -->
         <luxurious-yak />
 
-        <!-- section4 -->
         <protecting-you />
 
-        <!-- section5 -->
         <traceable-yak />
 
-        <!-- section6 -->
         <yak-display />
 
-        <!-- section7 -->
         <shokay-lab />
 
-        <!-- section8 -->
         <partnership />
 
-        <!-- section9 -->
         <community-development />
 
-        <!-- last section -->
         <source-from-plateau />
     </div>
 
