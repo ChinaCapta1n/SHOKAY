@@ -82,6 +82,4 @@ const router = createRouter({
     history: createWebHistory()
 })
 
-export {
-    router
-}
+export default router;
